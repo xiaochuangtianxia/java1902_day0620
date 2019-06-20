@@ -1,0 +1,7 @@
+com\qf\service\BmiService.class
+com\qf\dao\BmiDao.class
+com\qf\impl\BmiDaoImpl.class
+com\qf\dao\BaseDao.class
+com\qf\pojo\BmiBean.class
+com\qf\utils\DButils.class
+com\qf\service\BaseService.class

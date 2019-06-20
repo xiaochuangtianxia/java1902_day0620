@@ -1,0 +1,29 @@
+.box{
+    width:1300px;
+    height:600px;
+}
+.cal_box{
+    width: 650px;
+    height: 240px;
+    background-color: red;
+    float: left;
+
+}
+.que_box{
+    width: 650px;
+    height: 360px;
+    float: left;
+}
+.res_box{
+    width: 650px;
+    height: 240px;
+    float: left;
+
+}
+.his_box{
+    width: 650px;
+    height: 360px;
+    background-color: yellow;
+    float: left;
+
+}

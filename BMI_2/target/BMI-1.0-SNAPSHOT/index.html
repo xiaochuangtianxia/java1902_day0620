@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="box">
+
+        <!--计算过程-->
+    <div class="cal_box" align="center">
+<br>
+<br>
+        <table>
+            <div>身高：<input id="height"/>cm</div>
+<br>
+            <div>体重：<input id="weight"/>kg</div>
+<br>
+            <div>性别：<input type="radio" name="sex" id="male"/>男&nbsp&nbsp&nbsp&nbsp<input type="radio" name="sex" id="female"/>女</div>
+<br>
+            <div><button onclick="cal()">计算BMI</button></div>
+        </table>
+    </div>
+
+<!--结果-->
+    <div class="que_box">
+       <table>
+
+           <tr>
+               <td><img src="img/3_01.jpg" id="cal_pohto"/></td>
+               <td>
+                   <table>
+                       <tr>您的BMI指数为：<span id="cal_bmi" style="font-size: 30px;color:red"></span></tr>
+                       <br>
+                       <tr>表现为：<span id="cal_zt" style="font-size: 30px;color:red"></span></tr>
+                       <br>
+                       <tr>您身高对应的标准体重应为:<span id="bztz_id" style="font-size: 30px;color:red"></span></tr>
+                   </table>
+               </td>
+           </tr>
+
+       </table>
+    </div>
+
+
+    <!--表格查询-->
+    <div class="res_box">
+        <table>
+            <tr align="center" bgcolor="aqua">
+                <td width="325px">分类</td>
+                <td width="325px">BMIf范围</td>
+            </tr>
+            <tr align="center" bgcolor="blue">
+                <td>偏瘦</td>
+                <td>
+                    <=1 8.4</td>
+            </tr>
+            <tr align="center" bgcolor="green">
+                <td>正常</td>
+                <td>18.5 ~ 23.9</td>
+            </tr>
+            <tr align="center" bgcolor="yellow">
+                <td>过重</td>
+                <td>24.0 ~ 27.9</td>
+            </tr>
+            <tr align="center" bgcolor="red">
+                <td>肥胖</td>
+                <td>>= 28.0</td>
+            </tr>
+        </table>
+    </div>
+
+<!--历史结果 入库-->
+    <div class="his_box">
+        <table>
+            <tr  align="center">
+            <td width="110px">id</td>
+            <td width="110px">日期</td>
+            <td width="110px">身高</td>
+            <td width="110px">体重</td>
+            <td width="110px">BMI</td>
+            <td width="110px">删除</td>
+        </tr>
+            <div id="div1"></div>
+           <!-- <tr  align="center">
+                <td width="110px">1</td>
+                <td width="110px">日期1</td>
+                <td width="110px">身高1</td>
+                <td width="110px">体重1</td>
+                <td width="110px">BMI1</td>
+                <td width="110px">删除1</td>
+            </tr>-->
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript" charset="utf-8" src="js/bmi_count.js"></script>
+</body>
+</html>
